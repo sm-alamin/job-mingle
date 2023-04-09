@@ -1,0 +1,129 @@
+[
+  {
+    "id": "1",
+    "company_logo": "https://cdn-icons-png.flaticon.com/512/30/30511.png?w=740&t=st=1681066193~exp=1681066793~hmac=1cebef5e44545881bf44c5c6cd85ed24bda2d864406c6bf804d4ca839565bfe7",
+    "job_title": "Software Engineer",
+    "company_name": "ABC Technologies",
+    "remote_or_onsite": "Remote",
+    "location": "San Francisco, CA",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "Competitive",
+    "job_description": "We're looking for a software engineer with experience in React and Node.js to join our team and help us build innovative web applications.",
+    "job_responsibility": "Develop and maintain web applications using React and Node.js, work collaboratively with designers and product managers, and participate in code reviews and testing.",
+    "educational_requirements": "Bachelor's or higher degree in Computer Science or a related field.",
+    "experiences": "2+ years of experience in web application development.",
+    "contact_information": {
+      "phone": "555-1234",
+      "email": "jobs@example.com"
+    }
+  },
+  {
+    "id": "2",
+    "company_logo": "https://cdn-icons-png.flaticon.com/512/29/29145.png?w=740&t=st=1681066276~exp=1681066876~hmac=12fa712d6c55c24d9d3dbf2dba072ed25f8fde3bd61fefbc47227e926e8fd0fb",
+    "job_title": "Marketing Manager",
+    "company_name": "KMZ Corporation",
+    "remote_or_onsite": "Onsite",
+    "location": "New York, NY",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "Competitive",
+    "job_description": "We're looking for a marketing manager with experience in digital marketing and social media to lead our marketing team.",
+    "job_responsibility": "Develop and execute marketing strategies, manage the marketing team, create engaging content for social media channels, and analyze campaign performance.",
+    "educational_requirements": "Bachelor's or higher degree in Marketing, Communications, or a related field.",
+    "experiences": "5+ years of experience in marketing, with a focus on digital marketing and social media.",
+    "contact_information": {
+      "phone": "555-5678",
+      "email": "careers@example.com"
+    }
+  },
+  {
+    "id": "3",
+    "company_logo": "https://img.freepik.com/free-vector/flying-bird-logo-icon-linear-style_126523-946.jpg?w=740&t=st=1681066530~exp=1681067130~hmac=60604ece3f1ef1dd2c2214dbf0bb400641840d3f8faedec60cade0402447502f",
+    "job_title": "Graphic Designer",
+    "company_name": "BirdsWing & Co.",
+    "remote_or_onsite": "Onsite",
+    "location": "Seattle, WA",
+    "fulltime_or_parttime": "Part-time",
+    "salary": "$30-$40 per hour",
+    "job_description": "We're seeking a skilled graphic designer to join our team and help create visually compelling designs for a variety of projects.",
+    "job_responsibility": "Create designs for print and digital media, work collaboratively with clients and team members to develop design concepts, and ensure projects are completed on time and within budget.",
+    "educational_requirements": "Associate's or Bachelor's degree in Graphic Design or a related field.",
+    "experiences": "2+ years of experience in graphic design.",
+    "contact_information": {
+      "phone": "555-2468",
+      "email": "jobs@designco.com"
+    }
+  },
+  {
+    "id": "4",
+    "company_logo": "https://cdn-icons-png.flaticon.com/512/552/552254.png?w=740&t=st=1681066416~exp=1681067016~hmac=8981ef1f45862fc780d16563575a076c28904e255c4903190eb6cec6ffa8f9e9",
+    "job_title": "Data Analyst",
+    "company_name": "Ventech, Inc.",
+    "remote_or_onsite": "Remote",
+    "location": "Anywhere",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "Negotiable",
+    "job_description": "We're looking for a data analyst with experience in SQL and data visualization to help us analyze and communicate data insights.",
+    "job_responsibility": "Analyze data using SQL and other tools, create data visualizations to communicate insights, and collaborate with stakeholders to identify business opportunities.",
+    "educational_requirements": "Bachelor's or higher degree in Statistics, Mathematics, Computer Science, or a related field.",
+    "experiences": "2+ years of experience in data analysis.",
+    "contact_information": {
+      "phone": "555-3690",
+      "email": "careers@analyticsinc.com"
+    }
+  },
+  {
+    "id": "5",
+    "company_logo": "https://img.freepik.com/free-vector/call-center_24877-49035.jpg?w=740&t=st=1681066815~exp=1681067415~hmac=e167c70e5eaa9be87e8d8207dfcc7412f1915628427667d0cd79088735b96c1f",
+    "job_title": "Customer Service Representative",
+    "company_name": "Customer Care, LLC",
+    "remote_or_onsite": "Onsite",
+    "location": "Denver, CO",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$15-$20 per hour",
+    "job_description": "We're seeking a friendly and professional customer service representative to assist our customers via phone, email, and chat.",
+    "job_responsibility": "Answer customer inquiries via phone, email, and chat, troubleshoot issues, and provide excellent customer service.",
+    "educational_requirements": "High school diploma or equivalent.",
+    "experiences": "1+ years of experience in customer service.",
+    "contact_information": {
+      "phone": "555-8024",
+      "email": "careers@customercare.com"
+    }
+  },
+
+  {
+    "id": "6",
+    "company_logo": "https://img.freepik.com/free-vector/red-logo-black-background_1195-52.jpg?w=740&t=st=1681066680~exp=1681067280~hmac=896745be5950310f77e7aac6a4f4c4e77902b698fc88d0d222b7546331f3c5c7",
+    "job_title": "Marketing Coordinator",
+    "company_name": "Elite Studios, LLC",
+    "remote_or_onsite": "Onsite",
+    "location": "New York, NY",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$50,000-$60,000 per year",
+    "job_description": "We're seeking a creative and organized marketing coordinator to help plan and execute marketing campaigns.",
+    "job_responsibility": "Assist with the planning and execution of marketing campaigns, create and manage content for social media and email marketing, and collaborate with team members to achieve marketing goals.",
+    "educational_requirements": "Bachelor's degree in Marketing, Communications, or a related field.",
+    "experiences": "1+ years of experience in marketing or related field.",
+    "contact_information": {
+      "phone": "555-1234",
+      "email": "jobs@marketingprodigy.com"
+    }
+  },
+  {
+    "id": "7",
+    "company_logo": "https://img.freepik.com/free-vector/tech-computer-logo-template_23-2149204147.jpg?w=740&t=st=1681066890~exp=1681067490~hmac=5f4ea6f28743f5148a2f55a4df44fa17025e34dfae5d8c9faeb7670baa3f69ef",
+    "job_title": "Software Engineer",
+    "company_name": "Computer Care, Inc.",
+    "remote_or_onsite": "Remote",
+    "location": "Anywhere",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "Negotiable",
+    "job_description": "We're seeking a skilled software engineer to help build and maintain our cutting-edge software applications.",
+    "job_responsibility": "Design and implement software applications, troubleshoot and debug code, and collaborate with team members to deliver high-quality software.",
+    "educational_requirements": "Bachelor's or higher degree in Computer Science or a related field.",
+    "experiences": "2+ years of experience in software engineering.",
+    "contact_information": {
+      "phone": "555-5678",
+      "email": "careers@techinnovators.com"
+    }
+  }
+]

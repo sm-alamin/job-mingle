@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Main from "./components/Layout/Main";
 import Home from "./components/Home/Home";
+import JobPostings from "./components/JobPostings/JobPostings";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch('categories.json')
+        loader: () => fetch('categories.json'),
       },
     ]
   },
