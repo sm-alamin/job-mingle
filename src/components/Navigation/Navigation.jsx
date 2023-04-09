@@ -59,7 +59,7 @@ const Navigation = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn capitalize">Start Applying</a>
+        <a className="btn capitalize font-extrabold  bg-gradient-to-r from-purple-500 to-indigo-500">Start Applying</a>
       </div>
     </div>
   );
