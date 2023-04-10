@@ -27,7 +27,7 @@ const Home = () => {
                 <p className='text-gray-400'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
           <JobPostings />
-
+            
            </section>
         </>
     );
