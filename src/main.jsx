@@ -11,11 +11,13 @@ import SingleJobPosting from "./components/SingleJobPosting/SingleJobPosting";
 import AppliedJob from "./components/AppliedJob/AppliedJob";
 import { loadAppliedJobInfo } from "./loaders/loadAppliedJobInfo";
 import AssignmentMarkStatistics from "./components/Statistics/AssignmentMarkStatistics";
+import ErrorPage from "./components/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
