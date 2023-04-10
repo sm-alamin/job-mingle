@@ -7,31 +7,36 @@ import {
   EnvelopeIcon,
   MapPinIcon
 } from "@heroicons/react/24/solid";
+import { addToDb, getJobInformation } from "../../utilities/fakedb";
 
 const JobPostingDetails = () => {
   const { id } = useParams();
-  const [jobPosting, setJobPosting] = useState(null);
+  const [jobPostings, setJobPostings] = useState(null);
 
   useEffect(() => {
     fetch("/job_posting.json")
       .then((response) => response.json())
       .then((data) => {
-        const jobPosting = data.find((posting) => posting.id === id);
-        setJobPosting(jobPosting);
+        const jobPostings = data.find((posting) => posting.id === id);
+        setJobPostings(jobPostings);
       });
   }, [id]);
 
-  if (!jobPosting) {
+  const handleJobInfo = (id) =>{
+    addToDb(id)
+  }
+  
+  if (!jobPostings) {
     return <div>Loading...</div>;
   }
 
   return (
     <div className="flex flex-col gap-8 lg:flex-row">
       <div>
-        <h2 className="py-5">Job Description: <span className="text-gray-400 text-xs">{jobPosting.job_description}</span></h2>
-        <p className="py-5">Job Responsibility: <span className="text-gray-400 text-xs">{jobPosting.job_responsibility}</span></p>
-        <p className="py-5">Educational Requirement: <span className="text-gray-400 text-xs">{jobPosting.educational_requirements}</span></p>
-        <p className="py-5">Experiences: <span className="text-gray-400 text-xs">{jobPosting.educational_requirements}</span> </p>
+        <h2 className="py-5">Job Description: <span className="text-gray-400 text-xs">{jobPostings.job_description}</span></h2>
+        <p className="py-5">Job Responsibility: <span className="text-gray-400 text-xs">{jobPostings.job_responsibility}</span></p>
+        <p className="py-5">Educational Requirement: <span className="text-gray-400 text-xs">{jobPostings.educational_requirements}</span></p>
+        <p className="py-5">Experiences: <span className="text-gray-400 text-xs">{jobPostings.experiences}</span> </p>
       </div>
       <div className="card w-96 bg-base-100 shadow-xl">
         <div className="card-body p-3">
@@ -42,13 +47,13 @@ const JobPostingDetails = () => {
            <div className="flex gap-2">
               <CurrencyDollarIcon className="h-5 w-5 text-gray-300" />
               <p className="text-gray-400 text-xs pt-1">
-                Salary: {jobPosting.salary}
+                Salary: {jobPostings.salary}
               </p>
             </div>
             <div className="flex gap-2">
               <CalendarDaysIcon className="h-5 w-5 text-gray-300" />
               <p className="text-gray-400 text-xs pt-1">
-                Job Title: {jobPosting.job_title}
+                Job Title: {jobPostings.job_title}
               </p>
             </div>
            </div>
@@ -60,26 +65,26 @@ const JobPostingDetails = () => {
          <div className="flex gap-2">
               <PhoneIcon className="h-5 w-5 text-gray-300" />
               <p className="text-gray-400 text-xs pt-1">
-                Phone: {jobPosting.contact_information.phone}
+                Phone: {jobPostings.contact_information.phone}
               </p>
             </div>
             <div className="flex gap-2">
               <EnvelopeIcon className="h-5 w-5 text-gray-300" />
               <p className="text-gray-400 text-xs pt-1">
-                Email: {jobPosting.contact_information.email}
+                Email: {jobPostings.contact_information.email}
               </p>
             </div>
             <div className="flex gap-2">
               <MapPinIcon className="h-5 w-5 text-gray-300" />
               <p className="text-gray-400 text-xs pt-1">
-                Address: {jobPosting.location}
+                Address: {jobPostings.location}
               </p>
             </div>
          </div>
           </div>
 
           <div className="card-actions justify-end">
-            <button className="btn w-full capitalize font-extrabold  bg-gradient-to-r from-purple-500 to-indigo-500 mx-auto mt-4">Apply Now</button>
+            <button className="btn w-full capitalize font-extrabold  bg-gradient-to-r from-purple-500 to-indigo-500 mx-auto mt-4" onClick={()=>handleJobInfo(id)}>Apply Now</button>
           </div>
         </div>
       </div>
