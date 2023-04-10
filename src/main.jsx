@@ -10,6 +10,7 @@ import JobPostings from "./components/JobPostings/JobPostings";
 import SingleJobPosting from "./components/SingleJobPosting/SingleJobPosting";
 import AppliedJob from "./components/AppliedJob/AppliedJob";
 import { loadAppliedJobInfo } from "./loaders/loadAppliedJobInfo";
+import AssignmentMarkStatistics from "./components/Statistics/AssignmentMarkStatistics";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
         path: "/applied-job",
         element: <AppliedJob />,
         loader: loadAppliedJobInfo,
+      },
+      {
+        path: "/assignment-mark-statistics",
+        element: <AssignmentMarkStatistics />,
       },
       
     ]

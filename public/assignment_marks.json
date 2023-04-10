@@ -1,0 +1,35 @@
+{
+    "assignment1": {
+      "milestone": "Introduction to Programming",
+      "marks": 60
+    },
+    "assignment2": {
+      "milestone": "Data Structures and Algorithms",
+      "marks": 60
+    },
+    "assignment3": {
+      "milestone": "Web Development",
+      "marks": 60
+    },
+    "assignment4": {
+      "milestone": "Object-Oriented Programming",
+      "marks": 60
+    },
+    "assignment5": {
+      "milestone": "Database Design and Management",
+      "marks": 60
+    },
+    "assignment6": {
+      "milestone": "Mobile App Development",
+      "marks": 60
+    },
+    "assignment7": {
+      "milestone": "Artificial Intelligence",
+      "marks": 60
+    },
+    "assignment8": {
+      "milestone": "Computer Networks",
+      "marks": 60
+    }
+  }
+  
