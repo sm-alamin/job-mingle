@@ -6,7 +6,6 @@ import JobPostings from '../JobPostings/JobPostings';
 
 const Home = () => {
     const categories = useLoaderData();
-    console.log(categories)
     return (
         <>
             <Header />
