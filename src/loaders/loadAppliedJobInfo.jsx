@@ -1,7 +1,7 @@
 import { getJobInformation } from "../utilities/fakedb";
 
 export const loadAppliedJobInfo = async()=>{
-    const jobInfoData = await fetch('job_posting.json');
+    const jobInfoData = await fetch('/job_posting.json');
     const jobCards = await jobInfoData.json()
 
   const savedJobCart = getJobInformation()

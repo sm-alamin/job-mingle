@@ -12,6 +12,7 @@ import AppliedJob from "./components/AppliedJob/AppliedJob";
 import { loadAppliedJobInfo } from "./loaders/loadAppliedJobInfo";
 import AssignmentMarkStatistics from "./components/Statistics/AssignmentMarkStatistics";
 import ErrorPage from "./components/ErrorPage";
+import Blog from "./components/Blog/Blog";
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch('categories.json'),
+        loader: () => fetch('/categories.json'),
       },
       {
         path: "/jobDetails/:id",
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/assignment-mark-statistics",
         element: <AssignmentMarkStatistics />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
       },
       
     ]

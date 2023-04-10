@@ -8,7 +8,6 @@ const AppliedJob = () => {
 
     return (
         <div>
-            <h1>Hello from Applied job</h1>
             <div className='grid grid-cols-1 gap-8' >
             {
                 initialJobCartInfo.map(post => <AppliedPost key={post.id} post ={post} />)
