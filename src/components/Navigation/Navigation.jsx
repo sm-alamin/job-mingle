@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import "./Navigation.css";
 
 const Navigation = () => {
   return (
@@ -27,39 +28,99 @@ const Navigation = () => {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <Link to="/">Home</Link>
+              <NavLink
+                to="/"
+                className={({ isActive, isPending }) =>
+                  isPending ? "pending" : isActive ? "active" : ""
+                }
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <Link to="/assignment-mark-statistics">Statistics</Link>
+              <NavLink
+                to="/assignment-mark-statistics"
+                className={({ isActive, isPending }) =>
+                  isPending ? "pending" : isActive ? "active" : ""
+                }
+              >
+                Statistics
+              </NavLink>
             </li>
             <li>
-              <Link to="/applied-job">Applied Jobs</Link>
+              <NavLink
+                to="/applied-job"
+                className={({ isActive, isPending }) =>
+                  isPending ? "pending" : isActive ? "active" : ""
+                }
+              >
+                Applied Job
+              </NavLink>
             </li>
             <li>
-              <Link to="/blog">Blog</Link>
+              <NavLink
+                to="/blog"
+                className={({ isActive, isPending }) =>
+                  isPending ? "pending" : isActive ? "active" : ""
+                }
+              >
+                Blog
+              </NavLink>
             </li>
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost normal-case text-xl">Job Mingle</Link>
+        <Link to="/" className="btn btn-ghost normal-case text-xl">
+          Job Mingle
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <Link to="/">Home</Link>
+            <NavLink
+              to="/"
+              className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "active" : ""
+              }
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <Link to="/assignment-mark-statistics">Statistics</Link>
+            <NavLink
+              to="/assignment-mark-statistics"
+              className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "active" : ""
+              }
+            >
+              Statistics
+            </NavLink>
           </li>
           <li>
-            <Link to="/applied-job">Applied Job</Link>
+            <NavLink
+              to="/applied-job"
+              className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "active" : ""
+              }
+            >
+              Applied Job
+            </NavLink>
           </li>
           <li>
-            <Link to="/blog">Blog</Link>
+            <NavLink
+              to="/blog"
+              className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "active" : ""
+              }
+            >
+              Blog
+            </NavLink>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn capitalize font-extrabold  bg-gradient-to-r from-purple-500 to-indigo-500">Start Applying</a>
+        <a className="btn capitalize font-extrabold  bg-gradient-to-r from-purple-500 to-indigo-500">
+          Start Applying
+        </a>
       </div>
     </div>
   );
