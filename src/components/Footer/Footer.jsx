@@ -12,7 +12,7 @@ library.add(faFacebook, faTwitter, faInstagram);
 const Footer = () => {
   return (
     <div className="py-4">
-      <footer className="footer p-10 bg-neutral text-neutral-content">
+      <footer className="footer p-10 bg-neutral text-neutral-content justify-center md:justify-between">
         <div>
           <p>
             Job Mingle

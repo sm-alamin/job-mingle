@@ -69,7 +69,7 @@ const Navigation = () => {
             </li>
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost normal-case text-xl">
+        <Link to="/" className="btn btn-ghost normal-case text-sm sm:text-xl">
           Job Mingle
         </Link>
       </div>
@@ -118,7 +118,7 @@ const Navigation = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn capitalize font-extrabold  bg-gradient-to-r from-purple-500 to-indigo-500">
+        <a className="btn capitalize text-xs lg:text-sm font-extrabold  bg-gradient-to-r from-purple-500 to-indigo-500">
           Start Applying
         </a>
       </div>

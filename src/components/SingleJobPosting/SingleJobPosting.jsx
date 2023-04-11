@@ -14,7 +14,7 @@ const SingleJobPosting = ({ posting }) => {
       </p>
       <span className="text-gray-400 text-xs border px-5 py-2 bg-white">{remote_or_onsite}</span>
       <span className="text-gray-400 text-xs border px-5 py-2 bg-white ml-3">{fulltime_or_parttime}</span>
-      <div className="flex gap-5 pt-4">
+      <div className="flex flex-col md:flex-row gap-5 pt-4">
       <div className="flex gap-2">
       <MapPinIcon className="h-5 w-5 text-gray-300" />
       <p className="pt-1 text-gray-400 text-xs">{location} </p>
