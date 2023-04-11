@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getJobInformation } from "../../utilities/fakedb";
 import { useLoaderData } from "react-router-dom";
 import AppliedPost from "../AppliedPost/AppliedPost";
+import Banner from "../Banner/Banner";
 
 const AppliedJob = () => {
   const { initialJobCartInfo } = useLoaderData();
@@ -22,6 +23,7 @@ const AppliedJob = () => {
 
   return (
     <div>
+      <Banner pageName="Applied Jobs" />
       <div className="form-control w-32 max-w-xs py-5 ml-auto">
         <select className="select select-bordered" defaultValue="all" onChange={(e) => handleFilter(e.target.value)}>
           <option disabled value="all">

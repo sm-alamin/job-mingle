@@ -10,6 +10,7 @@ import {
   Legend,
   ResponsiveContainer
 } from "recharts";
+import Banner from "../Banner/Banner";
 
 const data = [
   {
@@ -62,6 +63,7 @@ const CustomTooltip = ({ active, payload, label }) => {
 const AssignmentMarkStatistics =()=> {
   return (
     <div>
+      <Banner pageName="Statistics" />
       <div className="text-center text-green-600">
         <h3>Assignment Analytics</h3>
         <p>Average Assignment Marks: 60.00</p>

@@ -1,0 +1,19 @@
+.banner {
+    background-color: #f5f5f5;
+    background-image: url(/vector.png), url(/vector_two.png);
+    background-position: left bottom, right top;
+    background-repeat: no-repeat;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner h2 {
+    font-size: 32px;
+    margin: 0;
+    color: #1A1919;
+  }

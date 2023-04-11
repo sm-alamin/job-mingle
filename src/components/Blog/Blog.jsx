@@ -1,7 +1,10 @@
 import React from "react";
+import Banner from "../Banner/Banner";
 
 const Blog = () => {
   return (
+    <>
+    <Banner pageName="Blog" />
     <div className="flex flex-col gap-10 py-5">
       <div className="card border rounded-md p-5 hover:bg-slate-300 hover:shadow-xl">
         <h3 className="text-center text-3xl underline py-3">When should We use context API? </h3>
@@ -39,10 +42,8 @@ const Blog = () => {
         For example, We could use useMemo to compute the result of a complex calculation or to format a date in a specific way. By memoizing the result with useMemo, we can ensure that the calculation is only performed when necessary, improving the performance of our component.
         </p>
       </div>
-
-      
-      
     </div>
+    </>
   );
 };
 
