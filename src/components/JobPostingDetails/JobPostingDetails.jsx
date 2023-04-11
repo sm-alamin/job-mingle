@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
 import {
   CurrencyDollarIcon,
   CalendarDaysIcon,
@@ -22,9 +23,17 @@ const JobPostingDetails = () => {
       });
   }, [id]);
 
-  const handleJobInfo = (id) =>{
-    addToDb(id)
+  const handleJobInfo = (id) => {
+    const jobInfo = getJobInformation();
+    const isAlreadyExists = jobInfo[id];
+    if (isAlreadyExists) {
+      toast.error("You have already applied for this post. !");
+    } else {
+      addToDb(id);
+      toast.success("Your application has been submitted successfully. !");
+    }
   }
+  
   
   if (!jobPostings) {
     return <div>Loading...</div>;
@@ -32,6 +41,7 @@ const JobPostingDetails = () => {
 
   return (
     <div className="flex flex-col gap-8 lg:flex-row">
+     <ToastContainer  position="top-center" />
       <div>
         <h2 className="py-5">Job Description: <span className="text-gray-400 text-xs">{jobPostings.job_description}</span></h2>
         <p className="py-5">Job Responsibility: <span className="text-gray-400 text-xs">{jobPostings.job_responsibility}</span></p>
