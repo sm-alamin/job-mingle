@@ -46,6 +46,14 @@ const data = [
     marks: 60,
   }
 ];
+
+const calculateAverageMark = (data) => {
+  const totalMarks = data.reduce((sum, assignment) => sum + assignment.marks, 0);
+  const averageMark = totalMarks / data.length;
+  return averageMark.toFixed(2);
+}
+
+
 const CustomTooltip = ({ active, payload, label }) => {
     if (active && payload) {
       return (
@@ -61,12 +69,13 @@ const CustomTooltip = ({ active, payload, label }) => {
   };
 
 const AssignmentMarkStatistics =()=> {
+  const averageMark = calculateAverageMark(data);
   return (
     <div>
       <Banner pageName="Statistics" />
       <div className="text-center text-green-600">
         <h3>Assignment Analytics</h3>
-        <p>Average Assignment Marks: 60.00</p>
+        <p>Average Assignment Marks: {averageMark}</p>
       </div>
       <div style={{ width: "100%", height: "400px" }}>
         <ResponsiveContainer>
